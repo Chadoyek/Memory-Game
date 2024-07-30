@@ -1,1 +1,1 @@
-# Simon-Game
+# Memory - Game
