@@ -87,7 +87,7 @@ function checkAnswer(currentLevel){
         },200)
 
         title.text("Game Over, Press Any Key to Restart")
-
+        
         startOver();
 
     }
@@ -104,14 +104,17 @@ $(document).keypress(function(){
 })
 
 function startOver(){
+    const savedHighestLevel = localStorage.getItem('highestLevel');
+    if (savedHighestLevel === null || level > parseInt(savedHighestLevel)) {
+        localStorage.setItem('highestLevel', level);
+        title.text("New High Score! Level " + level);
+    }
     level = 0;
     gamePattern = [];
     userClickedPattern = []
     started = false;
 
 }
-
-
 
 
 console.log(level)

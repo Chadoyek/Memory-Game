@@ -3,12 +3,20 @@ body {
   background-color: #011F3F;
 }
 
-#level-title {
+#level-title  {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
   color: #FEF2BF;
 }
+
+#score { 
+  font-family: 'Press Start 2P';
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
 
 .container {
   display: block;
@@ -61,6 +69,19 @@ h2 {
 }
 
 h2:hover {
+  cursor: pointer;
+  color:cornsilk;
+}
+
+.go-back {
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: 'Press Start 2P';
+  color:#FEF2BF;
+  
+}
+
+.go-back:hover {
   cursor: pointer;
   color:cornsilk;
 }

@@ -1,1 +1,25 @@
-<h1> Helllooo</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Score Page</title>
+    <script>
+        window.onload = function() {
+            // Retrieve the highest level from local storage
+            const highestLevel = localStorage.getItem('highestLevel') || "No score yet";
+            
+            // Update the content of the <h1> element with the retrieved score
+            document.getElementById('score').textContent = "Your Highest Score is: " + highestLevel;
+        };
+
+
+    </script>
+</head>
+<body>
+    <h1 id="score">Your Highest Score is: </h1>
+    <a href="index.html" class="go-back">Go Back</a>
+
+</body>
+</html>
